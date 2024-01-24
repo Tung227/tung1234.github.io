@@ -1,0 +1,90 @@
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+body{
+    background-color: rgb(234, 208, 175);
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+    margin-right: 15px; 
+    transition: background-color 0.5s ease; /* Hiệu ứng màu nền trong 0.3 giây */
+    cursor: pointer;
+}
+li:hover {
+    background-color: #ccc; 
+}
+#centered-heading, #centered-image {
+    text-align: center;
+    margin: 20px 0; 
+}
+#centered-image {
+    display: block; /* Đảm bảo rằng hình ảnh là một khối (block element) */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của container */
+    width: 500px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Đảm bảo các cột xuống dòng đúng sau thẻ img */
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px; /* Khoảng cách giữa các cột */
+}
+.column img {
+    max-width: 100%; /* Hình ảnh sẽ không vượt quá chiều rộng của container */
+    height: auto; /* Giữ tỉ lệ khung hình khi thay đổi kích thước */
+}
+p .highlight {
+    color: #0077cc; /* Mã màu xanh nước biển */
+}
+.actions button {
+    background-color: red; /* Màu nền đỏ */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Loại bỏ viền */
+    padding: 8px 16px; /* Kích thước lề cho nút */
+    cursor: pointer; /* Hiển thị biểu tượng con trỏ khi rê chuột qua nút */
+}
+.container .column article{
+    text-align: justify;
+}
+.highligh {
+    font-size: 30px;
+}
+article{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Media query for smaller screens (adjust as needed) */
+@media (max-width: 700px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+        margin: 10px 0;
+    }
+}   
+
+
+
+
